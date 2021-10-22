@@ -1,0 +1,50 @@
+Use npx create-next-app search-bar-in-nextjs-and-tailwindcss
+
+Removed folders that are not need
+
+installed tailwindcss
+
+added jsconfig.json
+
+created data.json file in src to store the mock data from ..... that will be used in this project.
+
+imported 2 modules useState and useEffect from react to manage state.
+
+React hooks always have to be at the top of the component. Especially the state hook. The state hook should be first then the useEffect hooks will come next usually although,
+they are not quicte as picky as the state hooks. 
+
+The useState, takes a default value. in this case, it's default value is a string because we are using a search query. 
+The useState takes a single arguement and it returns a tuple of 2 values which is jus an array with 2 spaces.
+The getter is the function that you will call when you want to get the value
+The setter is the function you will call if you want to set change the value of the property. 
+
+Then the useEffect comes after useState.
+Started to set out what the ui would look like in terms of what would be displayed 
+The search component contains all the logic for searching and filtering the data
+ It also contains the ui frame which includes the textfield, button and search result.
+ The textfield takes in props, placeholder.
+
+
+go to the HomePage component and import search from features/search
+ and enter <search /> as the feature you want rendered on the HomePage. <search /> takes props data that is the data from data.json file
+ save it and on the browser you will it see it rendered as an html input field 
+ use the placeholder passed as a props to customise search on the Search component.
+ to access the data, import the data we called it PeopleData, we want to pass into our search component. and pass it to the HomePage through the data props.
+
+ Now we can start implementing stuff but let's add some styling with tailwindcss to our input
+
+the input now looks alot better with tailwindcss.
+
+I used icon from...... and created an icon folder inside the ui folder.
+imported the SearchIcon into the Search component. 
+
+
+
+More stuff to implement:
+  //create logic to remove from display when the query entered in the textField is deleted.
+  //add onclick to button
+  //add more tailwindcss styles to app.
+
+
+
+ 
